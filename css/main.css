@@ -40,8 +40,25 @@ h1 {
     padding: 0 20%;
 }
 
-.input {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 20%;
+img {
+    width: 175px;
+    padding: 15px;
+    margin-left: 5px;
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(228, 228, 228);
+
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 1px;
+  }
+
+.player-choices {
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  
 }

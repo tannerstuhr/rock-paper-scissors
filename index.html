@@ -22,21 +22,12 @@
         <h3>Bot:</h3>
         <h4 class="bot-score" id="bot-score">0</h4>
     </div>
-        <form action="/js/main.js" method="get" id="player-input" class="input">
-              <div class="choice">
-                <input type="radio" id="rock" name="player-input" value="rock">
-                    <label for="rock">Rock</label>
-                </div>
-                <div class="choice">
-                <input type="radio" id="paper" name="player-input" value="paper">
-                    <label for="paper">Paper</label>
-                </div>
-                <div class="choice">
-                <input type="radio" id="scissors" name="player-input" value="scissors">
-                    <label for="scissors">Scissors</label>
-                </div>
-            <input type="submit" value="Submit" onclick="playRound()">
-        </form>
+        <div class="player-choices">
+            <img src="/images/rock.png" alt="rock" class="rock" id="rock">
+            <img src="/images/paper.png" alt="paper" class="paper" id="paper">
+            <img src="/images/scissors.png" alt="scissors" class="scissors" id="scissors">
+        </div>
+       
     <script src="js/main.js">
 
     </script>
