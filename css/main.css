@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #cecece;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.play-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.play-regular, .play-hard {
+    margin: 10px;
+}
+
+.score-title {
+    display: flex;
+    padding: 30px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20%;
+}

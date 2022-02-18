@@ -1,3 +1,37 @@
+
+function runGame() {
+    let playerScoreDisplay = document.getElementById("player-score");
+    let playerScore = 0
+    let botScore = 0;
+    let ties = 0;
+    for (let i = 0; i < 5; i++) {
+        
+       var results = playRound();
+        
+        
+        if (results === "win") {
+            playerScore += 1;
+            document.getElementById("player-score").firstChild.nodeValue = playerScore;
+            
+        } else if (results === "lose") {
+            botScore++
+        } else if (results === "tie") {
+            console.log("You tied! Try that round again!");
+            i--;
+            ties++;
+        }
+        
+        console.log("Your Score is " + playerScore);
+        console.log("Computer score is " + botScore);
+        
+    }
+    switch(true) {
+        case playerScore > botScore:
+            console.log(`Congrats! You won ${playerScore} out of 5 rounds.`);
+        case botScore > playerScore:
+            console.log(`Sorry, you lost! You wong ${playerScore} out of 5 rounds`); 
+   }
+}
 function computerPlay(){
     let choices = ["rock", "paper", "scissors"];
     let choice = choices[Math.floor(Math.random()*3)];
@@ -5,10 +39,11 @@ function computerPlay(){
 }
 
 function playRound() {
-    let playerSelection = prompt("Do you choose rock, paper, or scissors").toLowerCase();
-    while (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors"){
+    let playerSelection = prompt("please enter rock paper or scissors!")
+   while (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors"){
         playerSelection = prompt("Uh oh! Please choose rock, paper, or scissors").toLowerCase();
-    }
+   }
+    
     let computerSelection = computerPlay();
     alert(`You chose ${playerSelection} and the computer chose ${computerSelection}`);
     let results = " "
@@ -53,35 +88,8 @@ function playRound() {
             message = "Sorry, you lost!";
             break;
     }
-    alert(message);
-    //return results;
+    console.log(message);
+    return results;
 
 }
-console.log(playRound());
-function runGame() {
-    let palyerScore = 0;
-        let botScore = 0;
-        let ties = 0;
-    for (let i = 0; i < 5, i++;) {
-        
-        playRound();
-        if (results = "win") {
-            core++;
-        } else if (results = "lose") {
-            botScore++
-        } else if (results = "tie") {
-            console.log("You tied! Try that round again!");
-            i--;
-            ties++;
-        }
-        
-    }
-    switch(true) {
-        case palyerScore > botScore:
-            console.log(`Congrats! You won ${palyerScore} out of 5 rounds.`);
-        case botScore > palyerScore:
-            console.log(`Sorry, you lost! You wong ${palyerScore} out of 5 rounds`);
-    }
-}
 
-runGame();

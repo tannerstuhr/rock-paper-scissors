@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+    <h1 class="hero">
+        Rock Paper Scissors Game!
+    </h1>
+    <div class="play-buttons">
+        <button class="play-regular" onclick="runGame()">Play on Regular Mode</button>
+        <button class="play-hard" >Play on Hard Mode</button>
+    </div>
+    <h2 class="score-title" id="score-title">Score:</h2>
+    <div class="score">
+        <h3>You:</h3>
+        <h4 class="player-score" id="player-score">0</h4>
+        <h3>Bot:</h3>
+        <h4 class="bot-score" id="bot-score">0</h4>
+    </div>
+        <form action="/js/main.js" method="get" id="player-input" class="input">
+              <div class="choice">
+                <input type="radio" id="rock" name="player-input" value="rock">
+                    <label for="rock">Rock</label>
+                </div>
+                <div class="choice">
+                <input type="radio" id="paper" name="player-input" value="paper">
+                    <label for="paper">Paper</label>
+                </div>
+                <div class="choice">
+                <input type="radio" id="scissors" name="player-input" value="scissors">
+                    <label for="scissors">Scissors</label>
+                </div>
+            <input type="submit" value="Submit" onclick="playRound()">
+        </form>
     <script src="js/main.js">
 
     </script>
