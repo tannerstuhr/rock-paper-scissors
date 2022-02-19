@@ -5,18 +5,26 @@
 
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
     background-color: #cecece;
 }
-
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 61, 61);
+    padding-bottom: 40px;
+}
 h1 {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: lightblue;
+
 }
 
 .play-buttons {
@@ -61,4 +69,15 @@ img:hover {
   display: flex;
   justify-content: space-around;
   
+}
+
+.score-heading {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+#results-container {
+    font-weight: bold;
 }

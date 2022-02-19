@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1 class="hero">
-        Rock Paper Scissors Game!
-    </h1>
+    <div class="hero">
+        <h1 class="hero-heading">
+        Rock Paper Scissors
+        </h1>
+    <!--
     <div class="play-buttons">
         <button class="play-regular" onclick="runGame()">Play on Regular Mode</button>
         <button class="play-hard" >Play on Hard Mode</button>
     </div>
-    <h2 class="score-title" id="score-title">Score:</h2>
+-->
+        <h3> You know how to play... just pick.</h3>
+    </div>
+    <div class="score-heading">
+        <h2 class="score-title" id="score-title">Score:</h2>
+        <div id="results-container"></div>
+        <div id="empty-div"></div>
+    </div>
     <div class="score">
         <h3>You:</h3>
         <h4 class="player-score" id="player-score">0</h4>
@@ -23,9 +32,15 @@
         <h4 class="bot-score" id="bot-score">0</h4>
     </div>
         <div class="player-choices">
-            <img src="/images/rock.png" alt="rock" class="rock" id="rock">
-            <img src="/images/paper.png" alt="paper" class="paper" id="paper">
-            <img src="/images/scissors.png" alt="scissors" class="scissors" id="scissors">
+            <div class="button" id="rock">
+                <img src="/images/rock.png" alt="rock">
+            </div>
+            <div class="button" id="paper">
+                <img src="/images/paper.png" alt="paper">
+            </div>
+            <div class="button" id="scissors">
+            <img src="/images/scissors.png" alt="scissors">
+            </div>
         </div>
        
     <script src="js/main.js">
